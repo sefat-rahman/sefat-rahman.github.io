@@ -1,0 +1,90 @@
+@use "sass:color";
+@import 'variables';
+
+// Light theme
+:root {
+  --bg-color: #{$light-bg};
+  --bg-alt: #{$light-bg-alt};
+  --text-color: #{$light-text};
+  --text-secondary: #{$light-text-secondary};
+  --border-color: #{$light-border};
+  --card-bg: #{$light-card-bg};
+  --input-bg: #{$light-input-bg};
+  
+  // Theme transition
+  transition: $transition-base;
+}
+
+// Dark theme
+[data-theme="dark"] {
+  --bg-color: #{$dark-bg};
+  --bg-alt: #{$dark-bg-alt};
+  --text-color: #{$dark-text};
+  --text-secondary: #{$dark-text-secondary};
+  --border-color: #{$dark-border};
+  --card-bg: #{$dark-card-bg};
+  --input-bg: #{$dark-input-bg};
+}
+
+// Apply theme variables
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+// Theme toggle animation
+.theme-transition {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+// Icon swap in theme toggle
+#theme-toggle {
+  [data-lucide="sun"] {
+    display: none;
+  }
+  
+  [data-lucide="moon"] {
+    display: block;
+  }
+}
+
+[data-theme="dark"] #theme-toggle {
+  [data-lucide="sun"] {
+    display: block;
+  }
+  
+  [data-lucide="moon"] {
+    display: none;
+  }
+}
+
+// Additional theme-specific adjustments
+[data-theme="dark"] {
+  // Adjust shadows for dark mode
+  .card, .timeline-content {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  // Adjust skill badges for better contrast
+  .skill-badge {
+    background-color: rgba($primary-color, 0.2);
+  }
+}
+
+// Set scrollbar styles
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-alt);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: $border-radius-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $primary-color;
+} 

@@ -1,0 +1,178 @@
+@use "sass:color";
+@import 'variables';
+
+// Reset and base styles
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+// Container
+.container {
+  width: 100%;
+  max-width: $container-max-width;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Sections
+section {
+  padding: $spacing-4xl 0;
+  
+  @media (max-width: $breakpoint-md) {
+    padding: $spacing-3xl 0;
+  }
+  
+  @media (max-width: $breakpoint-sm) {
+    padding: $spacing-2xl 0;
+  }
+}
+
+// Flex utilities
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+// Grid layouts
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: $spacing-xl;
+  
+  @media (max-width: $breakpoint-sm) {
+    grid-template-columns: 1fr;
+    gap: $spacing-lg;
+  }
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $spacing-xl;
+  
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Hero layout
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: $spacing-3xl;
+  
+  @media (max-width: $breakpoint-lg) {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: $spacing-xl;
+  }
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  
+  img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: $border-radius-xl;
+    box-shadow: $shadow-lg;
+  }
+}
+
+// Contact layout
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+    gap: $spacing-lg;
+  }
+}
+
+// Timeline layout
+.timeline {
+  position: relative;
+  padding-left: $spacing-2xl;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: var(--border-color);
+  }
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: $spacing-xl;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: -$spacing-2xl;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    border: 3px solid var(--bg-color);
+    z-index: 1;
+  }
+}
+
+.timeline-content {
+  background-color: var(--card-bg);
+  padding: $spacing-lg;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-sm;
+}
+
+// About layout
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+} 

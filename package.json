@@ -1,0 +1,21 @@
+{
+  "name": "sefat-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Sefat E Rahman",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass scss/main.scss css/main.css",
+    "sass:watch": "sass --watch scss/main.scss css/main.css",
+    "dev": "sass --watch scss/main.scss css/main.css"
+  },
+  "keywords": [
+    "portfolio",
+    "personal",
+    "website"
+  ],
+  "author": "Sefat E Rahman",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.70.0"
+  }
+} 
