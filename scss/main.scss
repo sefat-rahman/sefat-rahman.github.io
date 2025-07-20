@@ -1,14 +1,14 @@
-// Import variables first
-@import 'variables';
+// Use modern @use syntax instead of deprecated @import
+@use 'variables' as *;
 
 // Import base styles  
-@import 'layout';
-@import 'typography';
+@use 'layout';
+@use 'typography';
 
 // Import components and themes
-@import 'components';
-@import 'theme';
-@import 'animations';
+@use 'components';
+@use 'theme';
+@use 'animations';
 
 // Any additional custom styles
 .hero {
