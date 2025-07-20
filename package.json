@@ -16,6 +16,6 @@
   "author": "Sefat E Rahman",
   "license": "MIT",
   "dependencies": {
-    "sass": "^1.70.0"
+    "sass": "^1.89.2"
   }
-} 
+}
