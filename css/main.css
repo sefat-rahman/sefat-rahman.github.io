@@ -1211,4 +1211,32 @@ body {
   }
 }
 
+.timeline-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 300px));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+@media (max-width: 576px) {
+  .timeline-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+.timeline-gallery a {
+  display: block;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.timeline-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.timeline-gallery a:hover img {
+  transform: scale(1.05);
+}
+
 /*# sourceMappingURL=main.css.map */

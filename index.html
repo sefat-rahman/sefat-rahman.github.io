@@ -27,7 +27,9 @@
                     <a href="#projects">Projects</a>
                     <a href="#publications">Publications</a>
                     <a href="#experience">Experience</a>
+                    <a href="#honors">Honors</a>
                     <a href="#skills">Skills</a>
+                    <a href="#beyond">Personal</a>
                     <a href="#contact">Contact</a>
                     <button id="theme-toggle" aria-label="Toggle theme">
                         <i data-lucide="sun"></i>
@@ -89,7 +91,8 @@
                         and <strong>Scientific Visualization</strong> 🔍. 
                         I earned an M.S. in Computer Science and Engineering from the University of South Florida (Dec 2022) and a B.Sc. in Computer Science and Engineering from Khulna University of Engineering &amp; Technology (Feb 2018) 🎓. 
                         Previously, I was a Lecturer at Eastern University, Dhaka, and in 2016 interned at IPVision Inc., Canada, working with QA and Big Data teams on the social networking platform <em>ringID</em> 💻. 
-                        Outside academics, I enjoy soccer, hiking, and exploring nature, and I am currently learning skiing ⛰️.
+                        In Summer 2026, I was a Machine Learning Research Intern at <strong>Lawrence Berkeley National Laboratory</strong>, studying the loss landscapes of molecular property prediction models 🧪. 
+                        Outside academics, I enjoy soccer (I captained <em>SLC Goal Diggers</em> to the 2025 SLC Bangladeshi Football Tournament title ⚽), hiking, and exploring nature, and I am currently learning skiing ⛰️.
                         </p>
 
                     </div>
@@ -131,17 +134,19 @@
                     <!-- Second Project -->
                     <div class="card">
                         <div class="project-image">
-                            <img src="assets/images/projects/Same Stats.gif" alt="Same Stats Different Topology">
+                            <img src="assets/images/projects/plotpreserve-framework.png" alt="PlotPreserve framework overview">
                         </div>
                         <div class="card-content">
-                            <h3>Topology-Preserving Data Transformation and Visualization</h3>
-                            <p class="card-meta">Persistent Homology • 2025</p>
-                            <p>Persistent homology, persistence diagrams, and distance metrics such as bottleneck and Wasserstein are
-                                being applied to guide data transformations
-                                 and visualizations, 
-                                ensuring smooth transitions, scalability, and privacy with preserved data fidelity</p>
+                            <h3>PlotPreserve: Property-Preserving Scatterplot Modification</h3>
+                            <p class="card-meta">Persistent Homology • 2025 • In Revision: IEEE TVCG</p>
+                            <p>PlotPreserve is a unified framework for modifying scatterplots while preserving their statistical, structural, and distributional properties
+                                as points are added, removed, or moved. Candidate positional and cardinality modifications are accepted only if they pass error checks
+                                based on persistent homology, Wasserstein and bottleneck distances, and optimal transport.
+                                It supports adaptive visualization, privacy, and dataset interpolation</p>
                             <div class="project-tech">
                                 <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Persistent Homology</span>
+                                <span class="tech-badge">Optimal Transport</span>
                                 <!-- <span class="tech-badge">Persistent Diagram</span> -->
                                 <!-- <span class="tech-badge">Persistent Homology</span> -->
                                 <!-- <span class="tech-badge">CNN</span> -->
@@ -159,7 +164,7 @@
                         </div>
                         <div class="card-content">
                             <h3>Uncertainty-Aware Visualization of Reeb Graphs</h3>
-                            <p class="card-meta">Uncertainty Visualization • 2025</p>
+                            <p class="card-meta">Uncertainty Visualization • 2025 • In Preparation: IEEE VIS 2027</p>
                             <p>This project addresses uncertainty in Reeb graph visualization, where variability leads to overlapping arcs and visual clutter. 
                                 By applying edge bundling techniques, it aims to reduce overlap and improve the clarity and interpretability of uncertain Reeb graphs</p>
                             <div class="project-tech">
@@ -174,7 +179,47 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <!-- Fourth Project -->
+                    <div class="card">
+                        <div class="project-image">
+                            <img src="assets/images/projects/path-selection.png" alt="Mode connectivity paths across data splits">
+                        </div>
+                        <div class="card-content">
+                            <h3>Visual Analytics of Mode Connectivity in ML Loss Landscapes</h3>
+                            <p class="card-meta">Visual Analytics • 2026 • In Preparation: EuroVis 2027</p>
+                            <p>An interactive visual analytics dashboard for comparing loss landscapes across data splits and train/validation/test metrics.
+                                Mapper graphs, merge trees, mode connectivity paths, and local Hessian spectra are linked in coordinated views</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Mapper</span>
+                                <span class="tech-badge">Merge Trees</span>
+                                <span class="tech-badge">Dash</span>
+                                <span class="tech-badge">Plotly</span>
+                            </div>
+                            <div class="project-links">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fifth Project -->
+                    <div class="card">
+                        <div class="project-image">
+                            <img src="assets/images/projects/Assign.png" alt="Assign AI assignment platform landing page">
+                        </div>
+                        <div class="card-content">
+                            <h3>Assign: AI Assignment Platform</h3>
+                            <p class="card-meta">🏆 Honorable Mention, AI in Education Hackathon (26 teams) • 2026</p>
+                            <p>Co-developed an AI assignment platform that diagnoses the gap behind each wrong answer, reteaches it, and verifies mastery.
+                                Five AI agents (quiz, grader, tutor, chat, insights) with Zod-validated outputs and guardrails give teachers concept-level evidence</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Amazon Bedrock</span>
+                                <span class="tech-badge">ECS Fargate</span>
+                                <span class="tech-badge">Aurora Serverless</span>
+                                <span class="tech-badge">Zod</span>
+                            </div>
+                            <div class="project-links">
+                            </div>
+                        </div>
+                    </div>
                     
                     <!-- <div class="card">
                         <div class="project-image">
@@ -256,10 +301,23 @@
                 <div class="timeline stagger-children">
                     <div class="timeline-item">
                         <div class="timeline-content">
+                            <h3>Machine Learning Research Intern</h3>
+                            <h4>Lawrence Berkeley National Laboratory, Berkeley, CA</h4>
+                            <p class="timeline-date">Summer 2026</p>
+                            <ul>
+                                <li>Studied the global loss landscapes of molecular property prediction models on the <strong>ESOL</strong> solubility dataset, using <strong>mode connectivity</strong> to test whether independently trained solutions are joined by low-loss paths.</li>
+                                <li>Characterized basins, barriers, and local curvature of the weight space with <strong>Mapper</strong>, <strong>merge trees</strong>, and <strong>Hessian eigenvalue analysis</strong>.</li>
+                                <li>Ran large-scale training and connectivity experiments on the <strong>NERSC</strong> supercomputer.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
                             <h3>Graduate Research Assistant</h3>
                             <h4>Scientific Computing and Imaging Institute, University of Utah</h4>
                             <p class="timeline-date">January 2023 – Present</p>
                             <ul>
+                                <li>Developed <strong>GASP</strong>, an open-source algorithm for faithful Reeb graph visualization, benchmarked against TTK (TopoInVis 2025).</li>
                                 <li>Developing methods for visualizing scientific data and uncertainty using Topological Data Analysis (TDA) tools such as Reeb graphs.</li>
                                 <li>Investigating property preservation and comparison across data transformations using Persistent Homology.</li>
                                 <li>Working on visualization techniques for uncertain and noisy data.</li>
@@ -270,7 +328,7 @@
                         <div class="timeline-content">
                             <h3>Graduate Teaching Assistant</h3>
                             <h4>Kahlert School of Computing, University of Utah</h4>
-                            <p class="timeline-date">August – December 2023, 2025</p>
+                            <p class="timeline-date">August – December 2023, 2025, 2026</p>
                             <ul>
                                 <li>Supported the <strong>Visualization for Data Science</strong> course through grading and student assistance.</li>
                                 <li>Delivered a guest lecture on <strong>Text Visualization</strong> for graduate and undergraduate students.</li>
@@ -315,7 +373,36 @@
             </div>
         </section>
 
-        
+        <!-- Honors & Leadership Section -->
+        <section class="honors section-bg-dots" id="honors">
+            <div class="container">
+                <h2 class="section-title">Honors &amp; Leadership</h2>
+                <div class="timeline stagger-children">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Honorable Mention</h3>
+                            <h4>Minds &amp; Machines AI in Education Hackathon, University of Utah</h4>
+                            <p class="timeline-date">2026</p>
+                            <ul>
+                                <li>Recognized among <strong>26 teams</strong> for <strong>Assign</strong>, a multi-agent AI assignment platform that diagnoses, reteaches, and verifies student understanding.</li>
+                            </ul>
+                            <div class="timeline-gallery">
+                                <a href="assets/images/assign-hackathon-team.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/assign-hackathon-team.jpg" alt="Team Assign receiving the Honorable Mention at the AI in Education Hackathon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Vice President</h3>
+                            <h4>Bangladesh Student Association (ASUU), University of Utah</h4>
+                            <p class="timeline-date">2023 – 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Skills Section -->
         <section class="skills" id="skills">
@@ -330,6 +417,7 @@
                             <span class="skill-badge">JavaScript</span>
                             <!-- <span class="skill-badge">R</span> -->
                             <span class="skill-badge">SQL</span>
+                            <span class="skill-badge">HTML/CSS</span>
                         </div>
                     </div>
                     <div class="skill-category">
@@ -340,6 +428,8 @@
                             <span class="skill-badge">D3.js, Node.js</span>
                             <span class="skill-badge">NumPy, SciPy, Pandas</span>
                             <span class="skill-badge">Matplotlib, Seaborn</span>
+                            <span class="skill-badge">Dash, Plotly</span>
+                            <span class="skill-badge">MeshLab, Blender</span>
                         </div>
                     </div>
                     <div class="skill-category">
@@ -348,6 +438,8 @@
                             <span class="skill-badge">Reeb Graph</span>
                             <span class="skill-badge">Persistent Homology</span>
                             <span class="skill-badge">Uncertainty Visualization</span>
+                            <span class="skill-badge">Mapper, Merge Trees</span>
+                            <span class="skill-badge">Mode Connectivity</span>
                         </div>
                     </div>
                     <div class="skill-category">
@@ -356,7 +448,63 @@
                             <span class="skill-badge">Git</span>
                             <span class="skill-badge">Linux</span>
                             <span class="skill-badge">LaTeX</span>
+                            <span class="skill-badge">uv</span>
+                            <span class="skill-badge">AWS (ECS Fargate, Aurora)</span>
+                            <span class="skill-badge">NERSC HPC</span>
                             <!-- <span class="skill-badge">Scientific Workflows and Reproducible Research</span> -->
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Machine Learning</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge">PyTorch</span>
+                            <span class="skill-badge">Scikit-learn</span>
+                            <span class="skill-badge">TensorFlow</span>
+                            <span class="skill-badge">MATLAB</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Generative AI</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Multi-Agent Systems</span>
+                            <span class="skill-badge">LLM Guardrails</span>
+                            <span class="skill-badge">RAG</span>
+                            <span class="skill-badge">Amazon Bedrock</span>
+                            <span class="skill-badge">Claude Code, Codex</span>
+                            <span class="skill-badge">Agent Harnesses</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beyond Academics Section -->
+        <section class="beyond" id="beyond">
+            <div class="container">
+                <h2 class="section-title">Beyond Academics</h2>
+                <div class="timeline stagger-children">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Champion &amp; Team Captain ⚽</h3>
+                            <h4>SLC Bangladeshi Football Tournament, Bangladesh Student Association, University of Utah</h4>
+                            <p class="timeline-date">2025</p>
+                            <ul>
+                                <li>Captained <strong>SLC Goal Diggers</strong> to the tournament championship.</li>
+                            </ul>
+                            <div class="timeline-gallery">
+                                <a href="assets/images/soccer-team.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/soccer-team.jpg" alt="SLC Goal Diggers with their medals and trophies">
+                                </a>
+                                <a href="assets/images/soccer-trophy.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/soccer-trophy.jpg" alt="Sefat E Rahman holding the championship trophy">
+                                </a>
+                                <a href="assets/images/soccer-hall-of-fame.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/soccer-hall-of-fame.jpg" alt="Tournament Hall of Fame listing SLC Goal Diggers as champions" style="object-position: top;">
+                                </a>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.facebook.com/BSAUofU/posts/pfbid02PH46D8Q1Yfr1wz6kZfuExz59EixHdn2E1y3QN4ydbzbZtCZTNRLu4PkBPLmqTkD1l" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">View Announcement</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -405,7 +553,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Sefat E Rahman. All rights reserved.</p>
+            <p>&copy; 2026 Sefat E Rahman. All rights reserved.</p>
         </div>
     </footer>
 
